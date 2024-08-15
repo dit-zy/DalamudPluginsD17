@@ -1,0 +1,20 @@
+name: update plugin version
+
+on:
+  repository_dispatch:
+    types: [trigger-workflow]
+
+jobs:
+  perform-update:
+    uses: dit-zy/DalamudPluginDeploy/.github/workflows/deploy_plugin.yml@v1
+    with:
+      public_name: ${{ github.event.client_payload.public_name }}
+      internal_name: ${{ github.event.client_payload.internal_name }}
+      project_name: ${{ github.event.client_payload.project_name }}
+      project_repo: ${{ github.event.client_payload.project_repo }}
+      release_sha: ${{ github.event.client_payload.release_sha }}
+      deployment_type: ${{ github.event.client_payload.deployment_type }}
+      owners: ${{ github.event.client_payload.owners }}
+      open_pr: ${{ github.event.client_payload.open_pr }}
+      github_username: ${{ github.event.client_payload.github_username }}
+      github_email: ${{ github.event.client_payload.github_email }}
