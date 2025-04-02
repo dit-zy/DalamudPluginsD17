@@ -1,7 +1,0 @@
-[plugin]
-repository = "https://github.com/img02/HuntHelper.git"
-commit = "138eaeaf5a185298ecd6019db12ebdfe4a20e78c"
-owners = [
-    "img02",
-]
-project_path = "HuntHelper"

@@ -1,6 +1,0 @@
-[plugin]
-repository = "https://github.com/Bluefissure/MapLinker.git"
-commit = "9c6fe18ef957ff38bb7ac388c68d7a4f1c8a8e77"
-owners = ["Bluefissure"]
-project_path = "MapLinker"
-changelog = "Patch 7.2 & API12"

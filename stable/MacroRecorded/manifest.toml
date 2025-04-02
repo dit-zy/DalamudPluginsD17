@@ -1,9 +1,0 @@
-[plugin]
-repository = "https://github.com/danielbrenom/MacroRecorded.git"
-commit = "7448fe4dd62d72e9df49b4dfc124c5236b9da751"
-owners = [
-    "danielbrenom",
-]
-project_path = "MacroRecorded"
-changelog = """- Updated plugin
- """

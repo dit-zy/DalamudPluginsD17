@@ -1,6 +1,0 @@
-[plugin]
-repository = "https://github.com/Tischel/InventorySearchBar.git"
-commit = "55d393c0b2197c0df7e241c94921d91c7c5d31b8"
-owners = ["Tischel"]
-project_path = "InventorySearchBar"
-changelog = "- Fixed language support."

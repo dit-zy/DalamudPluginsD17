@@ -1,7 +1,0 @@
-[plugin]
-repository = "https://github.com/Infiziert90/Hunty.git"
-commit = "efd560da54796d0df262a98ca882ae1146383ac4"
-owners = [
-    "Infiziert90",
-]
-project_path = "Hunty"

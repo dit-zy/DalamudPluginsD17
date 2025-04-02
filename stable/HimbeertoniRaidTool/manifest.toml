@@ -1,6 +1,0 @@
-[plugin]
-repository = "https://github.com/Koenari/HimbeertoniRaidTool.git"
-owners = [ "Koenari" ]
-project_path = "HimbeertoniRaidTool"
-commit = "2d1519a73306a1fdb94b608812f310bea92b1bce"
-changelog = "Bugfix: Babyface coffers resolve to the correct items now"

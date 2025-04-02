@@ -1,9 +1,0 @@
-[plugin]
-repository = "https://github.com/Styr1x/Browsingway.git"
-commit = "26700d37e23d3f069242e9a24f5772b865f4be6f"
-owners = ["Styr1x"]
-project_path = "Browsingway"
-changelog = """\
-- Bump Chromium to 134.0.6998.118
-- Api 12 support
-"""

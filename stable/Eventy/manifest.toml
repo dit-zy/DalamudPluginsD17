@@ -1,7 +1,0 @@
-[plugin]
-repository = "https://github.com/Infiziert90/Eventy.git"
-commit = "dd2d941d5b5ca2695a41f3f61cc2d750519b0a14"
-owners = [
-    "Infiziert90"
-]
-project_path = "Eventy"

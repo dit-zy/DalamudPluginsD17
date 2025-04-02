@@ -1,8 +1,0 @@
-[plugin]
-repository = "https://github.com/KangasZ/EurekaHelper.git"
-commit = "8affa9a8ccbad52ed3234ef118279407e7678dfa"
-owners = ["snorux", "KangasZ"]
-project_path = "EurekaHelper"
-changelog = """
-- Fix ShoutToChat
-"""

@@ -1,6 +1,0 @@
-[plugin]
-repository = "https://github.com/Tischel/ActionTimeline.git"
-commit = "5d33218bc957479bca528d6f67c339c07522b3f2"
-owners = ["Tischel"]
-project_path = "ActionTimeline"
-changelog = "- Added support for Patch 7.2 and Dalamud API 12."

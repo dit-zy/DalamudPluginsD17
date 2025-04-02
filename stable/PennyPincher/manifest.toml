@@ -1,7 +1,0 @@
-[plugin]
-repository = "https://github.com/tesu/PennyPincher.git"
-commit = "1c11275fc162e776b19e48a05810a0870990beda"
-owners = [
-    "tesu",
-]
-changelog = "API 12"

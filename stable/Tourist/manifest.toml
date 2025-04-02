@@ -1,5 +1,0 @@
-[plugin]
-repository = 'https://github.com/foophoof/Tourist.git'
-commit = '32e83f8d1d46f81ef1210bc770a6931f398a576c'
-owners = [ 'foophoof' ]
-changelog = 'API 12'

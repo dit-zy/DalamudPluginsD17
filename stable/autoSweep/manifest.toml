@@ -1,5 +1,0 @@
-[plugin]
-repository = "https://github.com/zhudotexe/FFXIV_PaissaHouse.git"
-commit = "54533674c987d26476c04ad51f6c88f71e8015a6"
-owners = ["zhudotexe"]
-changelog = "Updated for 7.2"
