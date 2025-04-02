@@ -1,0 +1,37 @@
+name: deploy plugin
+
+on:
+  repository_dispatch:
+    types: [deploy-release]
+
+jobs:
+  deploy-testing:
+    uses: dit-zy/DalamudPluginDeploy/.github/workflows/deploy_plugin.yml@v1
+    if: github.event.client_payload.deployment_type == 'testing'
+    secrets:
+      REPO_TOKEN: ${{ secrets.REPO_TOKEN }}
+    with:
+      deployment_type: ${{ github.event.client_payload.deployment_type }}
+      public_name: ${{ github.event.client_payload.deploy_details.public_name }}
+      internal_name: ${{ github.event.client_payload.deploy_details.internal_name }}
+      project_name: ${{ github.event.client_payload.release_details.project_name }}
+      project_repo: ${{ github.event.client_payload.release_details.project_repo }}
+      release_sha: ${{ github.event.client_payload.release_details.release_sha }}
+      release_version: ${{ github.event.client_payload.release_details.release_version }}
+      owners: ${{ github.event.client_payload.release_details.owners }}
+      open_pr: ${{ github.event.client_payload.deploy_details.open_pr }}
+      github_username: ${{ github.event.deploy_details.github_username }}
+      github_email: ${{ github.event.deploy_details.github_email }}
+      
+  deploy-stable:
+    uses: dit-zy/DalamudPluginDeploy/.github/workflows/deploy_plugin.yml@v1
+    if: github.event.client_payload.deployment_type == 'stable'
+    secrets:
+      REPO_TOKEN: ${{ secrets.REPO_TOKEN }}
+    with:
+      deployment_type: ${{ github.event.client_payload.deployment_type }}
+      public_name: ${{ github.event.client_payload.deploy_details.public_name }}
+      internal_name: ${{ github.event.client_payload.deploy_details.internal_name }}
+      open_pr: ${{ github.event.client_payload.deploy_details.open_pr }}
+      github_username: ${{ github.event.deploy_details.github_username }}
+      github_email: ${{ github.event.deploy_details.github_email }}
