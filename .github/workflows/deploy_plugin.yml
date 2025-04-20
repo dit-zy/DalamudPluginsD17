@@ -10,7 +10,6 @@ jobs:
     if: github.event.client_payload.deployment_type == 'testing'
     secrets:
       REPO_TOKEN: ${{ secrets.REPO_TOKEN }}
-      PR_TOKEN: ${{ secrets.PR_TOKEN }}
     permissions:
       pull-requests: write
     with:
@@ -31,7 +30,6 @@ jobs:
     if: github.event.client_payload.deployment_type == 'stable'
     secrets:
       REPO_TOKEN: ${{ secrets.REPO_TOKEN }}
-      PR_TOKEN: ${{ secrets.PR_TOKEN }}
     with:
       deployment_type: ${{ github.event.client_payload.deployment_type }}
       public_name: ${{ github.event.client_payload.deploy_details.public_name }}
