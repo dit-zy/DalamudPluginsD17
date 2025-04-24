@@ -6,7 +6,7 @@ on:
 
 jobs:
   deploy-testing:
-    uses: dit-zy/DalamudPluginDeploy/.github/workflows/deploy_plugin.yml
+    uses: dit-zy/DalamudPluginDeploy/.github/workflows/deploy_plugin.yml@main
     if: github.event.client_payload.deployment_type == 'testing'
     secrets:
       REPO_TOKEN: ${{ secrets.REPO_TOKEN }}
@@ -26,7 +26,7 @@ jobs:
       github_email: ${{ github.event.client_payload.deploy_details.github_email }}
       
   deploy-stable:
-    uses: dit-zy/DalamudPluginDeploy/.github/workflows/deploy_plugin.yml
+    uses: dit-zy/DalamudPluginDeploy/.github/workflows/deploy_plugin.yml@main
     if: github.event.client_payload.deployment_type == 'stable'
     secrets:
       REPO_TOKEN: ${{ secrets.REPO_TOKEN }}
